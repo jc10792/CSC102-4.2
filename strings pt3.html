@@ -1,0 +1,51 @@
+<!-- Jacob Camins-Esakov 
+    CSC102 
+    Module 4 
+    Assignment 4.2 -->
+    <!DOCTYPE html>  <!-- Setting the file type -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Used the default charset mentioned in class -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Kept defaults -->
+        <title>CSC Assignment 3.2</title> <!-- Set the tab name to match the application -->
+        <script src = "strings pt3.js"> </script>
+        <link rel="stylesheet" href="main_3.css"> <!-- Setting the style for my application -->
+    </head> <!-- Added the body of the application along with headers and paragraphs as per instructions -->
+    <body>
+        <nav>
+        <p>
+            click <a href="https://uat.edu"> UAT Home Page </a> 
+        </p>
+        </nav>
+        <h1> 
+            Submit your information to play a game!  
+        </h1>
+        <p id = "loginStatus"> Status of Login </p>
+        <br>
+        <form id="credSubmit" onsubmit="return false"> <!-- Setting up a form for the user to enter information -->
+            <br>
+            First Name: <input type="text" id="firstName">
+            <br>
+            Last Name:  <input type="text"  id = "lastName">
+            <br>
+            Zipcode:    <input type="number" id = "zipcode">
+            <input type="submit" onclick="CheckInput();">
+            <br>
+            <br>
+        </form>
+        <br>
+        <img src="C:\Users\Jacob's PC\javascript3\welcome-all-lets.jpg"> <!-- image from https://makeameme.org/meme/welcome-all-lets-->
+        <br>
+        <audio controls> <!-- Adding the controls for the user to intereact with the audio widget-->
+            <source src="us-lab-background-1.mp3" type = "audio/mpeg"></audio>  <!--Loading in the audo for the widget -->
+        </audio>
+        <br>
+        <button onclick= "playSpace();">Push to hear the space station</button>  <!-- Embedding audio through buttons calling a JS function-->
+        <br>
+        <br>
+        <button onclick= "stopSpace();" >Push to stop space station sounds</button> <!-- Please note that my creative additions for this week included adding style elements to my buttons-->
+    </body>
+    <footer>
+        Copyright 2023 by Jacob Camins-Esakov
+    </footer>
+    </html>
